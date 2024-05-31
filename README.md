@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+# HTML+CSS+JS的极简起始页/静态页/导航页
+ - 同时适配PC端，移动端
+ - 参考以下项目并做修改优化
+ - github：https://github.com/5iux/sou
+ - github：https://github.com/yeetime/sou2
+ - github：https://github.com/HolgerHuo/minimalist-search
 
-You can use the [editor on GitHub](https://github.com/beforyou/navigation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 与原版的改动
 
-### Markdown
+- 精简代码
+- CSS: 去除无用CSS，精简合并，优化侧边栏动画
+- 文件结构更加整齐（重定位iconfont，css，js文件夹到static下）
+- 更新和风天气API
+- 大量优化
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 增加内容
 
-```markdown
-Syntax highlighted code block
+- 添加底部仿 V2EX 延迟检测（纯js，可以一定程度上检测延迟高低，但准确性无法保证）
 
-# Header 1
-## Header 2
-### Header 3
+- 增加一言api
 
-- Bulleted
-- List
+- 增加今日诗词api
 
-1. Numbered
-2. List
+- 增加深色模式（跟随系统）
 
-**Bold** and _Italic_ and `Code` text
+## 计划
 
-[Link](url) and ![Image](src)
-```
+- [ ] 显示预搜索结果
+- [ ] 搜索记录
+- [ ] 自定义背景
+- [ ] 必应背景
+- [ ] ..............
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## 引用外链
+ - 和风天气API https://www.qweather.com
+ - 一言API https://v1.hitokoto.cn
+ - 今日诗词API https://www.jinrishici.com
+ - 百度统计 https://hm.baidu.com
+ - 字体 https://fonts.googleapis.com
+ - 图标引用阿里图标 https://www.iconfont.cn
+------
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/beforyou/navigation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 食用方法：
+ - 下载源码直接部署网站即可
+ - 注意：请注释掉index.html中百度统计代码或更换
+ - 注意：请更改或注释掉底部ICP备案信息
 
-### Support or Contact
+## 项目预览
+<img width="1423" alt="image" src="https://user-images.githubusercontent.com/45680714/161374630-92368305-11a6-472f-ba21-d7104a23c038.png">
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**本项目基于GPL-3.0协议**
+

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--
+**GPLv3.0 @ https://github.com/holgerhuo/minimalist-search https://github.com/5iux/sou https://github.com/yeetime/sou2
+-->
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <!--链接外部资源-->
+    <link rel="stylesheet" href="static/css/sou.css">
+    <link id="daily-theme" rel="stylesheet" href="static/css/sou.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" data-original-media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link id="dark-theme" rel="stylesheet" href="static/css/sou_night.css" media="(prefers-color-scheme: dark)" data-original-media="(prefers-color-scheme: dark)">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> <!--引用Google Fonts Josefin Sans-->
+    <link rel="manifest" href="static/manifest.json">
+    <script type="text/javascript" src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <!--load sw.js-->
+    <script async>
+        'use strict';
+        'serviceWorker' in navigator && navigator.serviceWorker.register('service-worker.js').then(function(a) {
+            a.onupdatefound = function() {
+                var b = a.installing;
+                b.onstatechange = function() {
+                    switch (b.state) {
+                        case 'installed':
+                            navigator.serviceWorker.controller ? console.log('New or updated content is available.') : console.log('Content is now available offline!');
+                            break;
+                        case 'redundant':
+                            console.error('The installing service worker became redundant.');
+                    }
+                }
+            }
+        }).catch(function(a) {
+            console.error('Error during service worker registration:', a)
+        });
+    </script>
+    <!--load sw.js end-->
+    <!-- 百度统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a55159c5a15b80d63159177e86e65167";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <!-- 百度统计 end-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Cache-Control"  content="no-transform" />
+    <meta http-equiv="Cache-Control"  content="no-siteapp" />
+    <link rel="icon" href="./static/images/avatar-300x300.webp" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="./static/images/server/apple-touch-icon.png" />
+    <meta name="msapplication-TileImage" content="./static/images/avatar-300x300.webp" />
+    <link rel="shortcut icon" href="./static/images/avatar-300x300.webp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes"><!--UC强制全屏-->
+    <meta name="browsermode" content="application"><!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/jQuery.rTabs.js"></script>
+    <script src="static/js/js.cookie.js"></script>
+    <script src="static/js/sou.js"></script>
+    <script async src="static/js/theme_auto.js"></script>
+    <script async src="static/js/theme_manual.js"></script>
+    <link rel="stylesheet" href="static/css/font_1230786_swt4kkie8ym/iconfont.css">
+    <script async src="static/css/font_1230786_swt4kkie8ym/iconfont.js"></script>
+</head>
+<body>
+    <div class="top-right theme-switch">
+        <a id="theme-switch">
+            <img id="theme-switch-icon" src="static/icon/icon-light.svg" width="20" height="20" title="" aria-expanded="true">
+        </a>
+    </div>
+    <!-- 侧栏 -->
+    <div id="menu"><i></i></div>
+    <div class="side closed">
+
+        <div class="tab-nav j-tab-nav">
+<!--
+            <a href="javascript:void(0);" class="current">Sites</a>
+
+           
+  		   <a href="javascript:void(0);">Settings</a>
+
+           <a href="javascript:void(0);">Backup</a> -->
+			
+
+        </div>
+
+        <div class="tab-con">
+
+            <div class="j-tab-con">
+                <!--书签-->
+                <div class="tab-con-item" style="display:block;">
+
+                    <div class="list">
+                        <ul>
+                                <li class="title"><i class="iconfont icon-yunbo"></i>Widgets</li>
+                                 <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					
+                                 <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>		
+                                 <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					
+                                 <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					
+                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>					                                <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                        class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>											
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+
+                            </ul>
+                    </div>
+
+                </div>
+                <!--书签 end-->
+                <!--设置-->
+                <div class="tab-con-item">
+
+                    <div class="set">
+                        <!--搜索引擎设置-->
+                        <div class="set_blocks">
+                            <div class="set_blocks_title">
+                                Search Engines
+                            </div>
+                            <div class="set_blocks_content">
+                                <div class="se_list">
+                                    <table class="se_list_table">
+                                        <tr>
+                                            <td><span class="iconfont iconhome"></span></td>
+                                            <td>百度</td>
+                                            <td>
+                                                <button class="set_se_default" value="baidu"><span class="iconfont iconstrore-add"></span></button>
+                                                &nbsp;
+                                                <button class="edit_se" value="baidu"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_se" value="baidu"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Google</td>
+                                            <td>
+                                                <button class="set_se_default" value="google"><span class="iconfont iconstrore-add"></span></button>
+                                                &nbsp;
+                                                <button class="edit_se" value="google"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_se" value="google"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="se_add_preinstall">
+                                    <button class="set_se_list_add"><span class="icon iconfont icontianjia"></span>Add new</button>
+                                    <button class="set_se_list_preinstall"><span class="icon iconfont iconjinggao"></span>Reset</button>
+                                </div>
+                                <div class="add_content se_add_content" style="display:none;">
+                                    <div class="from_items">
+                                        <p><b>Sequence:</b></p>
+                                        <input type="hidden" name="key_inhere">
+                                        <input type="number" name="key" placeholder="A valid number">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Name:</b></p>
+                                        <input type="text" name="title" placeholder="Name">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>URL</b></p>
+                                        <input type="url" name="url" placeholder="Begin with https://">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Query</b></p>
+                                        <input type="text" name="name" placeholder="Queries after ?">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Icon</b></p>
+                                        <input type="text" name="img" placeholder="Img URL">
+                                    </div>
+                                    <div class="from_items button">
+                                        <button class="se_add_save">Save</button>
+                                        <button class="se_add_cancel">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--搜索引擎设置 end-->
+                        <!--快捷方式设置-->
+                        <div class="set_blocks">
+                            <div class="set_blocks_title">
+                                Shortcuts
+                            </div>
+                            <div class="set_blocks_content">
+                                <div class="quick_list">
+                                    <table class="quick_list_table">
+                                        <tr>
+                                            <td>1.&nbsp;</td>
+                                            <td>Holger's Blog</td>
+                                            <td>
+                                                <button class="edit_quick" value="1"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_quick" value="1"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.&nbsp;</td>
+                                            <td>Notre Monde</td>
+                                            <td>
+                                                <button class="edit_quick" value="2"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_quick" value="2"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="se_add_preinstall">
+                                    <button class="set_quick_list_add"><span class="icon iconfont icontianjia"></span>Add new</button>
+                                    <button class="set_quick_list_preinstall"><span class="icon iconfont iconjinggao"></span>Reset</button>
+                                </div>
+                                <div class="add_content quick_add_content" style="display:none;">
+                                    <div class="from_items">
+                                        <p><b>Sequence:</b></p>
+                                        <input type="hidden" name="key_inhere">
+                                        <input type="number" name="key" placeholder="A valid number">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Name:</b></p>
+                                        <input type="text" name="title" placeholder="Name">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>URL:</b></p>
+                                        <input type="url" name="url" placeholder="Begin with https://">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Icon:</b></p>
+                                        <input type="text" name="img" placeholder="Img URL">
+                                    </div>
+                                    <div class="from_items button">
+                                        <button class="quick_add_save">Save</button>
+                                        <button class="quick_add_cancel">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--快捷方式设置 end-->
+                    </div>
+
+                </div>
+                <!--设置 end-->
+                <!--我的-->
+                <div class="tab-con-item">
+
+                    <div class="me">
+                        <p><img src="static/icon/user.png"></p>
+                    </div>
+                    <div class="my_data">
+                        <hr>
+                        <br>
+                        <h3>Backup</h3>
+                        <textarea id="data_txt"></textarea>
+                        <br>
+                        <button id="my_data_in">Import</button>
+                        <button id="my_data_out">Export</button>
+                    </div>
+                </div>
+                <!--我的 end-->
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- 侧栏 end -->
+    <!--和风天气插件-->
+    <div class="mywth" style="width: 320px;">
+        <div id="he-plugin-simple"></div> <script async>WIDGET = {CONFIG:{"modules":"01234","background":5,"tmpColor":"4A4A4A","tmpSize":"12","cityColor":"4A4A4A","citySize":"12","aqiSize":"12","weatherIconSize":"16","alertIconSize":"14","padding":"0px 5px 5px 0px","shadow":"1","language":"auto","borderRadius":5,"fixed":"false","vertical":"middle","horizontal":"left","key":"5e9773d40306432e915cb9093c9f6369"}}</script> <script async src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+    </div>
+    <!--和风天气插件-->
+    <!--搜索框和书签 end-->
+    <div id="content">
+        <div class="con">
+           <div class="shlogo"></div>
+            <div class="sou">
+                 <form target="_blank" class="search" action="https://www.baidu.com/search">
+                    <img class="se" src="static/icon/baidu.ico" title="Switch"></img>
+                    <input id="search_placeholder" class="wd" type="text" name="wd" placeholder="My life is all about you~">
+                    <button class="s">
+                        <i style="font-size: 20px;" class="iconfont icon-sousuo"></i>
+                    </button>
+                </form>
+                <div class="search-engine" style="display: none;">
+                    <div class="search-engine-head">
+                        <strong class="search-engine-tit">Select Search Engine</strong>
+                    </div>
+                    <ul class="search-engine-list">
+                         <li class="se-li" url="https://www.baidu.com/s" name="wd" img="static/icon/baidu.ico"><img src="static/icon/baidu.ico"></img>百度</li>
+                         <li class="se-li" url="https://www.google.com/search" name="q" img="static/icon/google_1.png"><img src="static/icon/google_1.png"></img>Google</li>
+                         <li class="se-li" url="https://cn.bing.com/search" name="q" img="static/icon/bing.ico"><img src="static/icon/bing.ico"></img>Bing CN</li>
+                         <li class="se-li" url="https://www.dogedoge.com/results" name="q" img="static/icon/doge_ico.png"><img src="static/icon/doge_ico.png"></img>多吉</li>
+                         <li class="se-li" url="https://mijisou.com" name="q" img="static/icon/mijisou.png"><img src="static/icon/mijisou.png"></img>秘迹</li>
+                         <li class="se-li" url="https://seeres.com/search" name="q" img="static/icon/seeres.png"><img src="static/icon/seeres.png"></img>seeres*</li>
+                    </ul>
+                </div>
+                
+                <div class="hitokoto">
+                    <p id="hitokoto"></p> ——『<span id="from">😀 Loading...</span>』
+                </div>
+				
+				
+				
+            </div>
+        <script async>
+            fetch('https://v1.hitokoto.cn')
+            .then(function (res){
+            return res.json();
+            })
+            .then(function (data) {
+            var hitokoto = document.getElementById('hitokoto');
+            hitokoto.innerText = data.hitokoto;
+            var from = document.getElementById('from');
+            from.innerText = data.from;
+            })
+            .catch(function (err) {
+            console.error(err);
+            })
+        </script>
+        <!--今日诗词-->
+        <script>
+              jinrishici.load(function(result) {
+                var telecopy =  result.data.content;
+                var cursor = "|";
+                var teletype = document.getElementById("search_placeholder");
+                teletype.placeholder = cursor;
+                var counter = 0;
+                var timer = setInterval(function(){
+                    teletype.placeholder = telecopy.substr(0, counter) + cursor;
+                        counter++;
+                        if(counter === telecopy.length + 1) {
+                            clearInterval(timer);
+                        }
+                    }, 100);
+                });
+        </script>
+        <!--今日诗词 placeholder end-->
+        </div>
+        <div class="foot">
+			<!--这里可以输入信息-->
+			
+			<p>©2024 | <a href=""></a>
+                    本页已运行：<span id="momk"></span> | <pss>&nbsp;Ping：<ping></ping></pss>
+                    <script language="javascript">
+                        function star() {
+                            window.location.href = './websigned.mobileconfig';
+                            setTimeout(function () {
+                                window.location.href = "./udid/embedded2.mobileprovision";
+                            }, 3000);
+                        }
+                        function show_date_time() {
+                            window.setTimeout("show_date_time()", 1000);
+                            BirthDay = new Date("2024/5/31");
+                            today = new Date();
+                            timeold = (today.getTime() - BirthDay.getTime());
+                            sectimeold = timeold / 1000
+                            secondsold = Math.floor(sectimeold);
+                            msPerDay = 24 * 60 * 60 * 1000
+                            e_daysold = timeold / msPerDay
+                            daysold = Math.floor(e_daysold);
+                            e_hrsold = (daysold - e_daysold) * -24;
+                            hrsold = Math.floor(e_hrsold);
+                            e_minsold = (hrsold - e_hrsold) * -60;
+                            minsold = Math.floor((hrsold - e_hrsold) * -60);
+                            seconds = Math.floor((minsold - e_minsold) * -60);
+                            momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                        }
+                        show_date_time();
+                    </script>
+
+                    <style>
+                        #momk {
+                            animation: change 10s infinite;
+                            font-weight: 500;
+                        }
+
+                        @keyframes change {
+                            100% {
+                                color: #7fb7be;
+                            }
+
+                            75% {
+                                color: #2a628f;
+                            }
+
+                            50% {
+                                color: #c49799;
+                            }
+
+                            25% {
+                                color: #e5625e;
+                            }
+
+                            0% {
+                                color: #7880b5;
+                            }
+                        }
+                    </style>
+            </p>
+
+			<script async src="static/js/latency.js"></script>
+            <script src="static/js/defocus.js"></script>
+            <script async src="static/js/defocus.js"></script>
+        </div>
+    <!--搜索框和书签 end-->
+<!--
+感谢作者代码来自以下项目并做修改
+github：https://github.com/5iux/sou
+github：https://github.com/yeetime/sou2
+github：https://github.com/HolgerHuo/minimalist-search
+本项目基于GPL-3.0协议
+-->
+</body>
+</html>
