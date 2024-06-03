@@ -7,14 +7,6 @@ $(document).ready(function() {
 
     //搜索引擎列表【预设】
     var se_list_preinstall = {
-        '2':{
-            id      :2,
-            title   :"Google",
-            url     :"https://www.google.com/search",
-            name    :"q",
-            img     :"./static/icon/google_1.png",
-
-        },
         '1':{
             id      :1,
             title   :"百度",
@@ -22,28 +14,28 @@ $(document).ready(function() {
             name    :"wd",
             img     :"./static/icon/baidu.ico",
         },
-        '3':{
+        '2':{
             id      :3,
             title   :"Bing CN",
             url     :"https://cn.bing.com/search",
             name    :"q",
             img     :"./static/icon/bing.ico",
         },
-        '4':{
+        '3':{
             id      :4,
             title   :"多吉",
             url     :"https://www.dogedoge.com/results",
             name    :"q",
             img     :"./static/icon/doge_ico.png",
         },
-        '5':{
+        '4':{
             id      :5,
             title   :"秘迹",
             url     :"https://mijisou.com",
             name    :"q",
             img     :"./static/icon/mijisou.png",
         },
-        '6':{
+        '5':{
             id      :6,
             title   :"seeres*",
             url     :"https://seeres.com/search",
@@ -51,42 +43,6 @@ $(document).ready(function() {
             img     :"./static/icon/seeres.png",
         },
     };
-
-    //主页快捷方式【预设】
-    var quick_list_preinstall = {
-        '1':{
-            title   :"Blog",
-            url     :"https://blog.holger.net.cn/",
-            img     :"https://i.holger.net.cn/static/images/avatar-300x300.webp",
-            explain :"Holger's Blog",
-        },
-        '2':{
-            title   :"Island",
-            url     :"https://mast.dragon-fly.club",
-            img     :"https://mast.dragon-fly.club/favicon.ico",
-            explain :"Island 岛屿 | 一座属于你的岛屿",
-
-        },
-        '3':{
-            title   :"V2EX",
-            url     :"https://www.v2ex.com/",
-            img     :"./static/icon/v2ex.png",
-            explain :"V2EX",
-        },
-        '4':{
-            title   :"Steam",
-            url     :"https://store.steampowered.com/",
-            img     :"./static/icon/steam.ico",
-            explain :"Steam",
-        },
-        '5':{
-            title   :"GitHub",
-            url     :"https://github.com/",
-            img     :"./static/icon/github.ico",
-            explain :"GitHub",
-        },
-    };
-
     //搜索框数据加载
     searchData();
 
