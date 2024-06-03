@@ -34,15 +34,7 @@
     </script>
     <!--load sw.js end-->
     <!-- 百度统计 -->
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?a55159c5a15b80d63159177e86e65167";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
+
     <!-- 百度统计 end-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="Cache-Control"  content="no-transform" />
@@ -378,29 +370,70 @@
             console.error(err);
             })
         </script>
-        <!--今日诗词-->
-        <script>
-              jinrishici.load(function(result) {
-                var telecopy =  result.data.content;
-                var cursor = "|";
-                var teletype = document.getElementById("search_placeholder");
-                teletype.placeholder = cursor;
-                var counter = 0;
-                var timer = setInterval(function(){
-                    teletype.placeholder = telecopy.substr(0, counter) + cursor;
-                        counter++;
-                        if(counter === telecopy.length + 1) {
-                            clearInterval(timer);
-                        }
-                    }, 100);
-                });
-        </script>
-        <!--今日诗词 placeholder end-->
+       <!--今日诗词 placeholder end-->
         </div>
         <div class="foot">
 			<!--这里可以输入信息-->
-            <a href="https://beian.miit.gov.cn/" target="_blank" ><b>浙ICP备2022003510-1</b></a><p> bata-2022.4 ----<pss>&nbsp;Ping：<ping></ping></pss></p>
-			<script async src="static/js/latency.js"></script>
+			
+			<p>©2024 | <a href=""></a>
+                    本页已运行：<span id="momk"></span> | <pss>&nbsp;Ping：<ping></ping></pss>
+                    <script language="javascript">
+                        function star() {
+                            window.location.href = './websigned.mobileconfig';
+                            setTimeout(function () {
+                                window.location.href = "./udid/embedded2.mobileprovision";
+                            }, 3000);
+                        }
+                        function show_date_time() {
+                            window.setTimeout("show_date_time()", 1000);
+                            BirthDay = new Date("2024/5/31");
+                            today = new Date();
+                            timeold = (today.getTime() - BirthDay.getTime());
+                            sectimeold = timeold / 1000
+                            secondsold = Math.floor(sectimeold);
+                            msPerDay = 24 * 60 * 60 * 1000
+                            e_daysold = timeold / msPerDay
+                            daysold = Math.floor(e_daysold);
+                            e_hrsold = (daysold - e_daysold) * -24;
+                            hrsold = Math.floor(e_hrsold);
+                            e_minsold = (hrsold - e_hrsold) * -60;
+                            minsold = Math.floor((hrsold - e_hrsold) * -60);
+                            seconds = Math.floor((minsold - e_minsold) * -60);
+                            momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                        }
+                        show_date_time();
+                    </script>
+
+                    <style>
+                        #momk {
+                            animation: change 10s infinite;
+                            font-weight: 500;
+                        }
+
+                        @keyframes change {
+                            100% {
+                                color: #7fb7be;
+                            }
+
+                            75% {
+                                color: #2a628f;
+                            }
+
+                            50% {
+                                color: #c49799;
+                            }
+
+                            25% {
+                                color: #e5625e;
+                            }
+
+                            0% {
+                                color: #7880b5;
+                            }
+                        }
+                    </style>
+            </p>
+	    <script async src="static/js/latency.js"></script>
             <script src="static/js/defocus.js"></script>
             <script async src="static/js/defocus.js"></script>
         </div>
