@@ -7,16 +7,16 @@ $(document).ready(function() {
 
     //搜索引擎列表【预设】
     var se_list_preinstall = {
-        '1':{
-            id      :1,
+        '2':{
+            id      :2,
             title   :"Google",
             url     :"https://www.google.com/search",
             name    :"q",
             img     :"./static/icon/google_1.png",
 
         },
-        '2':{
-            id      :2,
+        '1':{
+            id      :1,
             title   :"百度",
             url     :"https://www.baidu.com/s",
             name    :"wd",
