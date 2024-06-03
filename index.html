@@ -112,16 +112,149 @@
 <li><a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank"><i class="iconfont icon-windows" style="color: #48c;"></i>MSDN下载</a></li>
 <!------>
 <!------>
-
                             </ul>
                     </div>
+
                 </div>
+                <!--书签 end-->
                 <!--设置-->
                 <div class="tab-con-item">
 
                     <div class="set">
-                      
+                        <!--搜索引擎设置-->
+                        <div class="set_blocks">
+                            <div class="set_blocks_title">
+                                Search Engines
+                            </div>
+                            <div class="set_blocks_content">
+                                <div class="se_list">
+                                    <table class="se_list_table">
+                                        <tr>
+                                            <td><span class="iconfont iconhome"></span></td>
+                                            <td>百度</td>
+                                            <td>
+                                                <button class="set_se_default" value="baidu"><span class="iconfont iconstrore-add"></span></button>
+                                                &nbsp;
+                                                <button class="edit_se" value="baidu"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_se" value="baidu"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="se_add_preinstall">
+                                    <button class="set_se_list_add"><span class="icon iconfont icontianjia"></span>Add new</button>
+                                    <button class="set_se_list_preinstall"><span class="icon iconfont iconjinggao"></span>Reset</button>
+                                </div>
+                                <div class="add_content se_add_content" style="display:none;">
+                                    <div class="from_items">
+                                        <p><b>Sequence:</b></p>
+                                        <input type="hidden" name="key_inhere">
+                                        <input type="number" name="key" placeholder="A valid number">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Name:</b></p>
+                                        <input type="text" name="title" placeholder="Name">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>URL</b></p>
+                                        <input type="url" name="url" placeholder="Begin with https://">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Query</b></p>
+                                        <input type="text" name="name" placeholder="Queries after ?">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Icon</b></p>
+                                        <input type="text" name="img" placeholder="Img URL">
+                                    </div>
+                                    <div class="from_items button">
+                                        <button class="se_add_save">Save</button>
+                                        <button class="se_add_cancel">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--搜索引擎设置 end-->
+                        <!--快捷方式设置-->
+                        <div class="set_blocks">
+                            <div class="set_blocks_title">
+                                Shortcuts
+                            </div>
+                            <div class="set_blocks_content">
+                                <div class="quick_list">
+                                    <table class="quick_list_table">
+                                        <tr>
+                                            <td>1.&nbsp;</td>
+                                            <td>Holger's Blog</td>
+                                            <td>
+                                                <button class="edit_quick" value="1"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_quick" value="1"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.&nbsp;</td>
+                                            <td>Notre Monde</td>
+                                            <td>
+                                                <button class="edit_quick" value="2"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_quick" value="2"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="se_add_preinstall">
+                                    <button class="set_quick_list_add"><span class="icon iconfont icontianjia"></span>Add new</button>
+                                    <button class="set_quick_list_preinstall"><span class="icon iconfont iconjinggao"></span>Reset</button>
+                                </div>
+                                <div class="add_content quick_add_content" style="display:none;">
+                                    <div class="from_items">
+                                        <p><b>Sequence:</b></p>
+                                        <input type="hidden" name="key_inhere">
+                                        <input type="number" name="key" placeholder="A valid number">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Name:</b></p>
+                                        <input type="text" name="title" placeholder="Name">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>URL:</b></p>
+                                        <input type="url" name="url" placeholder="Begin with https://">
+                                    </div>
+                                    <div class="from_items">
+                                        <p><b>Icon:</b></p>
+                                        <input type="text" name="img" placeholder="Img URL">
+                                    </div>
+                                    <div class="from_items button">
+                                        <button class="quick_add_save">Save</button>
+                                        <button class="quick_add_cancel">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--快捷方式设置 end-->
+                    </div>
 
+                </div>
+                <!--设置 end-->
+                <!--我的-->
+                <div class="tab-con-item">
+
+                    <div class="me">
+                        <p><img src="static/icon/user.png"></p>
+                    </div>
+                    <div class="my_data">
+                        <hr>
+                        <br>
+                        <h3>Backup</h3>
+                        <textarea id="data_txt"></textarea>
+                        <br>
+                        <button id="my_data_in">Import</button>
+                        <button id="my_data_out">Export</button>
+                    </div>
+                </div>
+                <!--我的 end-->
             </div>
 
         </div>
