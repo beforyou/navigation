@@ -31,60 +31,35 @@ $(document).ready(function() {
         },
         '4':{
             id      :4,
-            title   :"多吉",
-            url     :"https://www.dogedoge.com/results",
+            title   :"Yandex",
+            url     :"https://www.yandex.com/",
             name    :"q",
-            img     :"./static/icon/doge_ico.png",
-        },
-        '5':{
-            id      :5,
-            title   :"秘迹",
-            url     :"https://mijisou.com",
-            name    :"q",
-            img     :"./static/icon/mijisou.png",
-        },
-        '6':{
-            id      :6,
-            title   :"seeres*",
-            url     :"https://seeres.com/search",
-            name    :"q",
-            img     :"./static/icon/seeres.png",
+            img     :"./static/icon/yandex.png",
         },
     };
 
     //主页快捷方式【预设】
     var quick_list_preinstall = {
         '1':{
-            title   :"Blog",
-            url     :"https://blog.holger.net.cn/",
-            img     :"https://i.holger.net.cn/static/images/avatar-300x300.webp",
-            explain :"Holger's Blog",
-        },
-        '2':{
-            title   :"Island",
-            url     :"https://mast.dragon-fly.club",
-            img     :"https://mast.dragon-fly.club/favicon.ico",
-            explain :"Island 岛屿 | 一座属于你的岛屿",
-
-        },
-        '3':{
-            title   :"V2EX",
-            url     :"https://www.v2ex.com/",
-            img     :"./static/icon/v2ex.png",
-            explain :"V2EX",
-        },
-        '4':{
-            title   :"Steam",
-            url     :"https://store.steampowered.com/",
-            img     :"./static/icon/steam.ico",
-            explain :"Steam",
-        },
-        '5':{
             title   :"GitHub",
             url     :"https://github.com/",
             img     :"./static/icon/github.ico",
             explain :"GitHub",
         },
+        '2':{
+            title   :"Steam",
+            url     :"https://store.steampowered.com/",
+            img     :"./static/icon/steam.ico",
+            explain :"Steam",
+        },
+        '3':{
+            title   :"52破解",
+            url     :"https://www.52pojie.cn/",
+            img     :"./static/icon/v2ex.png",
+            explain :"52pojie",
+        },
+
+
     };
 
     //搜索框数据加载
