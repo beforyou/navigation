@@ -33,6 +33,9 @@
         });
     </script>
     <!--load sw.js end-->
+    <!-- 百度统计 -->
+
+    <!-- 百度统计 end-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="Cache-Control"  content="no-transform" />
     <meta http-equiv="Cache-Control"  content="no-siteapp" />
@@ -54,8 +57,9 @@
     <script async src="static/js/theme_auto.js"></script>
     <script async src="static/js/theme_manual.js"></script>
     <link rel="stylesheet" href="static/css/font_1230786_swt4kkie8ym/iconfont.css">
+    <link rel="stylesheet" href="static/css/font_1614281/iconfont.css">
     <script async src="static/css/font_1230786_swt4kkie8ym/iconfont.js"></script>
-    <title>个人导航页</title>
+	<title>个人导航页</title>
 </head>
 <body>
     <div class="top-right theme-switch">
@@ -63,7 +67,7 @@
             <img id="theme-switch-icon" src="static/icon/icon-light.svg" width="20" height="20" title="" aria-expanded="true">
         </a>
     </div>
-  <!-- 侧栏 -->
+    <!-- 侧栏 -->
     <div id="menu"><i></i></div>
     <div class="side closed">
 
@@ -126,6 +130,7 @@
                             </ul>
                     </div>
                 </div>
+                <!--书签 end-->
                 <!--设置-->
                 <div class="tab-con-item">
 
@@ -147,6 +152,17 @@
                                                 <button class="edit_se" value="baidu"><span class="iconfont iconbook-edit"></span></button>
                                                 &nbsp;
                                                 <button class="delete_se" value="baidu"><span class="iconfont icondelete"></span></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Google</td>
+                                            <td>
+                                                <button class="set_se_default" value="google"><span class="iconfont iconstrore-add"></span></button>
+                                                &nbsp;
+                                                <button class="edit_se" value="google"><span class="iconfont iconbook-edit"></span></button>
+                                                &nbsp;
+                                                <button class="delete_se" value="google"><span class="iconfont icondelete"></span></button>
                                             </td>
                                         </tr>
                                     </table>
@@ -281,8 +297,8 @@
         <div class="con">
            <div class="shlogo"></div>
             <div class="sou">
-                 <form target="_blank" class="search" action="https://www.baidu.com/search">
-                    <img class="se" src="static/icon/baidu.ico" title="Switch"></img>
+                 <form target="_blank" class="search" action="https://www.google.com/search">
+                    <img class="se" src="static/icon/google_1.png" title="Switch"></img>
                     <input id="search_placeholder" class="wd" type="text" name="wd" placeholder="My life is all about you~">
                     <button class="s">
                         <i style="font-size: 20px;" class="iconfont icon-sousuo"></i>
@@ -294,19 +310,50 @@
                     </div>
                     <ul class="search-engine-list">
                          <li class="se-li" url="https://www.baidu.com/s" name="wd" img="static/icon/baidu.ico"><img src="static/icon/baidu.ico"></img>百度</li>
+                         <li class="se-li" url="https://www.google.com/search" name="q" img="static/icon/google_1.png"><img src="static/icon/google_1.png"></img>Google</li>
                          <li class="se-li" url="https://cn.bing.com/search" name="q" img="static/icon/bing.ico"><img src="static/icon/bing.ico"></img>Bing CN</li>
                          <li class="se-li" url="https://www.dogedoge.com/results" name="q" img="static/icon/doge_ico.png"><img src="static/icon/doge_ico.png"></img>多吉</li>
                          <li class="se-li" url="https://mijisou.com" name="q" img="static/icon/mijisou.png"><img src="static/icon/mijisou.png"></img>秘迹</li>
                          <li class="se-li" url="https://seeres.com/search" name="q" img="static/icon/seeres.png"><img src="static/icon/seeres.png"></img>seeres*</li>
                     </ul>
                 </div>
-                
-                <div class="hitokoto">
-                    <p id="hitokoto"></p> ——『<span id="from">😀 Loading...</span>』
+                <div class="quick-div">
+                    <ul class="quick-ul">
+                        <li class="quick" data-s="bilibili" target="_blank" title="Holger's Blog">
+                            <a target=_blank href="https://blog.holger.net.cn">
+                                <i style="background-image: url(./static/images/avatar-300x300.webp);"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="quick" data-s="github" target="_blank" title="Island">
+                            <a target=_blank href="https://mast.dragon-fly.club/">
+                                <i style="background-image: url(https://mast.dragon-fly.club/favicon.ico);"></i>
+                                SNS
+                            </a>
+                        </li>
+                        <li class="quick" data-s="scp" target="_blank" title="GitHub">
+                            <a target=_blank rel="nofollow" href="https://github.com">
+                                <i style="background-image: url(static/icon/github.ico);"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="quick" data-s="v2ex" target="_blank" title="V2EX">
+                            <a rel="nofollow" href="https://www.v2ex.com/">
+                                <i style="background-image: url(static/icon/v2ex.png);"></i>
+                                V2EX
+                            </a>
+                        </li>
+                        <li class="quick" data-s="steam" target="_blank" title="Steam">
+                            <a target=_blank rel="nofollow" href="https://store.steampowered.com/">
+                                <i style="background-image: url(static/icon/steam.ico);"></i>
+                                Steam
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-				
-				
-				
+                <div class="hitokoto">
+                    <p id="hitokoto">😀 Loading...</p>——「<span id="from">😀 Loading...</span>」
+                </div>
             </div>
         <script async>
             fetch('https://v1.hitokoto.cn')
@@ -343,7 +390,7 @@
         <!--今日诗词 placeholder end-->
         </div>
         <div class="foot">
-			<!--这里可以输入信息-->
+						<!--这里可以输入信息-->
 			
 			<p>©2024 | <a href=""></a>
                     本页已运行：<span id="momk"></span> | <pss>&nbsp;Ping：<ping></ping></pss>
