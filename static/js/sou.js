@@ -9,28 +9,20 @@ $(document).ready(function() {
     var se_list_preinstall = {
         '1':{
             id      :1,
-            title   :"Google",
-            url     :"https://www.google.com/search",
-            name    :"q",
-            img     :"./static/icon/google_1.png",
-
-        },
-        '2':{
-            id      :2,
             title   :"百度",
             url     :"https://www.baidu.com/s",
             name    :"wd",
             img     :"./static/icon/baidu.ico",
         },
-        '3':{
-            id      :3,
+        '2':{
+            id      :2,
             title   :"Bing CN",
             url     :"https://cn.bing.com/search",
             name    :"q",
             img     :"./static/icon/bing.ico",
         },
-        '4':{
-            id      :4,
+        '3':{
+            id      :3,
             title   :"Yandex",
             url     :"https://www.yandex.com/",
             name    :"q",
