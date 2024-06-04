@@ -32,11 +32,11 @@ $(document).ready(function() {
 
     //主页快捷方式【预设】
     var quick_list_preinstall = {
-        '1':{
-            title   :"GitHub",
-            url     :"https://github.com/",
-            img     :"./static/icon/github.ico",
-            explain :"GitHub",
+'1':{
+            title   :"52Pojie",
+            url     :"https://www.52pojie.cn/",
+            img     :"https://avatar.52pojie.cn/images/noavatar_small.gif",
+            explain :"52POJIE",
         },
         '2':{
             title   :"Steam",
@@ -45,13 +45,11 @@ $(document).ready(function() {
             explain :"Steam",
         },
         '3':{
-            title   :"52破解",
-            url     :"https://www.52pojie.cn/",
-            img     :"./static/icon/v2ex.png",
-            explain :"52pojie",
+            title   :"GitHub",
+            url     :"https://github.com/",
+            img     :"./static/icon/github.ico",
+            explain :"GitHub",
         },
-
-
     };
 
     //搜索框数据加载
