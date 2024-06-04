@@ -23,24 +23,17 @@ $(document).ready(function() {
         },
         '3':{
             id      :3,
-            title   :"多吉",
-            url     :"https://www.dogedoge.com/results",
+            title   :"Google",
+            url     :"https://www.google.com/",
             name    :"q",
-            img     :"./static/icon/doge_ico.png",
+            img     :"./static/icon/google_1.png",
         },
-        '4':{
+ '4':{
             id      :4,
-            title   :"秘迹",
-            url     :"https://mijisou.com",
+            title   :"Yandex",
+            url     :"https://www.yandex.com/",
             name    :"q",
-            img     :"./static/icon/mijisou.png",
-        },
-        '5':{
-            id      :5,
-            title   :"seeres*",
-            url     :"https://seeres.com/search",
-            name    :"q",
-            img     :"./static/icon/seeres.png",
+            img     :"./static/icon/yandex.png",
         },
     };
 
