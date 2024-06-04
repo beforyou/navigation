@@ -9,31 +9,46 @@ $(document).ready(function() {
     var se_list_preinstall = {
         '1':{
             id      :1,
+            title   :"Google",
+            url     :"https://www.google.com/search",
+            name    :"q",
+            img     :"./static/icon/google_1.png",
+
+        },
+        '2':{
+            id      :2,
             title   :"百度",
             url     :"https://www.baidu.com/s",
             name    :"wd",
             img     :"./static/icon/baidu.ico",
         },
-        '2':{
-            id      :2,
+        '3':{
+            id      :3,
             title   :"Bing CN",
             url     :"https://cn.bing.com/search",
             name    :"q",
             img     :"./static/icon/bing.ico",
         },
-        '3':{
-            id      :3,
-            title   :"Google",
-            url     :"https://www.google.com/",
-            name    :"q",
-            img     :"./static/icon/google_1.png",
-        },
- '4':{
+        '4':{
             id      :4,
-            title   :"Yandex",
-            url     :"https://www.yandex.com/",
+            title   :"多吉",
+            url     :"https://www.dogedoge.com/results",
             name    :"q",
-            img     :"./static/icon/yandex.png",
+            img     :"./static/icon/doge_ico.png",
+        },
+        '5':{
+            id      :5,
+            title   :"秘迹",
+            url     :"https://mijisou.com",
+            name    :"q",
+            img     :"./static/icon/mijisou.png",
+        },
+        '6':{
+            id      :6,
+            title   :"seeres*",
+            url     :"https://seeres.com/search",
+            name    :"q",
+            img     :"./static/icon/seeres.png",
         },
     };
 
